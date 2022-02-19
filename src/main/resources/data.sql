@@ -1,19 +1,11 @@
 INSERT INTO tb_role (authority) VALUES ('ROLE_VISITOR');
 INSERT INTO tb_role (authority) VALUES ('ROLE_MEMBER');
 
-INSERT INTO tb_user (name, email, password) VALUES ('Alan Pacheco', 'alan@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG'); 
-INSERT INTO tb_user (name, email, password) VALUES ('Ben Pacheco', 'ben@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG'); 
-INSERT INTO tb_user (name, email, password) VALUES ('Maitê Pacheco', 'maite@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG'); 
-INSERT INTO tb_user (name, email, password) VALUES ('Juliana Sousa', 'juliana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG'); 
-INSERT INTO tb_user (name, email, password) VALUES ('Evelin Maria', 'evelin@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, email, password) VALUES ('Bob Brown', 'bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG'); 
+INSERT INTO tb_user (name, email, password) VALUES ('Ana Maria', 'ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG'); 
 
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1,1);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (2,1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2,2);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (3,1);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (3,2);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (4,1);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (5,1);
 
 
 INSERT INTO tb_genre (name) VALUES ('Ação');
@@ -31,8 +23,8 @@ INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUE
 INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('Sem Limites', 'Sem Limites', 2011, 'https://capas-m.imagemfilmes.com.br/103246_000_m.jpg','Encarando o desemprego e a rejeição de sua namorada, o escritor Eddie Morra tem certeza que não tem mais futuro. Mas tudo muda quando um velho amigo lhe dá uma droga que melhora as habilidades mentais.',5);
 
 INSERT INTO tb_review (user_id, movie_id, text) VALUES (1, 4, 'Excelente! Muito interessante');
-INSERT INTO tb_review (user_id, movie_id, text) VALUES (4, 5, 'Maravilhoso!');
-INSERT INTO tb_review (user_id, movie_id, text) VALUES (3, 6, 'Muito emocionante, parabéns!');
-INSERT INTO tb_review (user_id, movie_id, text) VALUES (2, 1, 'Ótimo filme! Recomendo a todos.');
-INSERT INTO tb_review (user_id, movie_id, text) VALUES (4, 2, 'Obra incrível!');
-INSERT INTO tb_review (user_id, movie_id, text) VALUES (5, 3, 'Muito empolgante! Recomendo.');
+INSERT INTO tb_review (user_id, movie_id, text) VALUES (1, 5, 'Maravilhoso!');
+INSERT INTO tb_review (user_id, movie_id, text) VALUES (2, 6, 'Muito emocionante, parabéns!');
+INSERT INTO tb_review (user_id, movie_id, text) VALUES (1, 1, 'Ótimo filme! Recomendo a todos.');
+INSERT INTO tb_review (user_id, movie_id, text) VALUES (2, 2, 'Obra incrível!');
+INSERT INTO tb_review (user_id, movie_id, text) VALUES (2, 3, 'Muito empolgante! Recomendo.');
